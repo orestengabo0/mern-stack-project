@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    outline: 0;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    padding: 30px;
+    width: 50%;
+  }
+  
+  .form-section.right {
+    background-color: #673ab7;
+    color: #fff;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .form-section {
+      width: 100%;
+    }
+    .right {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+    }
+    .form-section {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      flex-direction: row;
+    }
+    .form-section {
+      width: 50%;
+    }
+  }
+  
+  .right input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 100%;
+    background: #673ab7;
+    outline: 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  #country {
+    background: #673ab7;
+    color: white;
+  }
+  
+  .submit {
+    background: #fff;
+    padding: 0.4rem 1rem;
+    border: 1px solid #673ab7;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 1px 0 10px 2px #1c0643;
+  }
+  
+  .submit:hover {
+    background: #673ab7;
+    color: white;
+  }
+  
